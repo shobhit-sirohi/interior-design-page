@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Consultant</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./images/devchallenges.png" type="image/x-icon" />
+  </head>
+  <body class="bg-black text-white h-screen">
+    <div class="pt-4 px-4 lg:pt-10 lg:px-20 h-full">
+      <nav class="flex justify-between items-center">
+        <div class="">
+          <a class="border-2 md:border-2 md:p-2 p-1 text-sm" href="#">THIS INTERIOR</a>
+        </div>
+        <div class="text-lg hidden md:flex space-x-16">
+          <a class="" href="#">Home</a>
+          <a class="" href="#">Collection</a>
+          <a class="" href="#">About</a>
+          <a class="" href="#">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button id="open" href="#">
+            <!-- hamburger -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- hamburgur div -->
+      <div id="menu">
+        <div>
+          <button id="close">
+            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.094l-4.157-4.104 4.1-4.141-1.849-1.849-4.105 4.159-4.156-4.102-1.833 1.834 4.161 4.12-4.104 4.157 1.834 1.832 4.118-4.159 4.143 4.102 1.848-1.849z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- home section -->
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-2/5">
+          <h1 class="text-3xl md:text-5xl mt-8 space-x-5 md:mt-40">Modern Interior</h1>
+          <p class="text-xl md:text-2xl md:w-80 mt-4 mb-4 md:mt-12 md:mb-12">
+            A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+          </p>
+          <a class="text-lg md:text-xl font-medium flex items-center" href="#">
+            Read more
+            <div class="ml-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="1" y1="12" x2="19" y2="12" />
+                <line x1="15" y1="16" x2="19" y2="12" />
+                <line x1="15" y1="8" x2="19" y2="12" />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="md:w-3/5 relative">
+          <img class="mt-8 md:mt-14 rounded-sm" src="./images/photo1.png" alt="design" />
+          <div class="absolute bg-red-400 -bottom-4 right-10 md:-bottom-14 md:right-40 h-52 xl:w-80 lg:w-72">
+            <div class="flex">
+              <img class="rounded-full h-8 w-8" src="./images/photo2.png" alt="portrait" />
+              <div class="flex flex-col">
+                <p>Alizza Webber</p>
+                <p>Interior Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
