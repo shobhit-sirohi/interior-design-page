@@ -9,19 +9,19 @@
     <link rel="shortcut icon" href="./images/devchallenges.png" type="image/x-icon" />
   </head>
   <body class="bg-black text-white h-screen">
-    <div class="pt-4 px-4 lg:pt-10 lg:px-20 h-full">
+    <div class="pt-4 px-4 sm:pt-6 sm:px-6 lg:pt-10 lg:px-20 h-full">
       <nav class="flex justify-between items-center">
-        <div class="">
-          <a class="border-2 md:border-2 md:p-2 p-1 text-sm" href="#">THIS INTERIOR</a>
+        <div>
+          <a class="border-2 md:border-2 sm:p-2 p-1 text-sm rounded-md 2xl:text-xl" href="#">THIS INTERIOR</a>
         </div>
-        <div class="text-lg hidden md:flex space-x-16">
+        <div class="text-lg xl:text-xl 2xl:text-2xl hidden md:flex space-x-16">
           <a class="" href="#">Home</a>
           <a class="" href="#">Collection</a>
           <a class="" href="#">About</a>
           <a class="" href="#">Contact</a>
         </div>
         <div class="md:hidden">
-          <button id="open" href="#">
+          <button class="mobile-menu-button" href="#">
             <!-- hamburger -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,30 +45,33 @@
       </nav>
 
       <!-- hamburgur div -->
-      <div id="menu">
-        <div>
-          <button id="close">
+      <div class="flex flex-col md:hidden mobile-menu">
+        <!-- <div class="self-end">
+          <button class="mobile-menu-button">
             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.094l-4.157-4.104 4.1-4.141-1.849-1.849-4.105 4.159-4.156-4.102-1.833 1.834 4.161 4.12-4.104 4.157 1.834 1.832 4.118-4.159 4.143 4.102 1.848-1.849z"
               />
             </svg>
           </button>
-        </div>
-        <div>
-          <ul>
+        </div> -->
+        <div class="flex items-center self-center h-screen text-xl font-medium -mt-10 sm:text-3xl">
+          <ul class="space-y-10 sm:space-y-20">
             <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
       <!-- home section -->
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-2/5">
-          <h1 class="text-3xl md:text-5xl mt-8 space-x-5 md:mt-40">Modern Interior</h1>
-          <p class="text-xl md:text-2xl md:w-80 mt-4 mb-4 md:mt-12 md:mb-12">
+      <div class="flex flex-col lg:flex-row">
+        <div class="lg:w-2/5">
+          <h1 class="text-3xl md:text-5xl mt-8 space-x-5 md:mt-20 lg:mt-40 xl:text-6xl 2xl:text-8xl 2xl:mt-60">Modern Interior</h1>
+          <p class="text-xl md:text-2xl xl:text-3xl lg:w-80 xl:w-4/5 mt-4 mb-4 md:mt-12 md:mb-12">
             A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
           </p>
-          <a class="text-lg md:text-xl font-medium flex items-center" href="#">
+          <a class="text-lg md:text-xl font-medium flex items-center 2xl:text-3xl" href="#">
             Read more
             <div class="ml-2">
               <svg
@@ -91,19 +94,59 @@
             </div>
           </a>
         </div>
-        <div class="md:w-3/5 relative">
-          <img class="mt-8 md:mt-14 rounded-sm" src="./images/photo1.png" alt="design" />
-          <div class="absolute bg-red-400 -bottom-4 right-10 md:-bottom-14 md:right-40 h-52 xl:w-80 lg:w-72">
-            <div class="flex">
-              <img class="rounded-full h-8 w-8" src="./images/photo2.png" alt="portrait" />
-              <div class="flex flex-col">
-                <p>Alizza Webber</p>
-                <p>Interior Designer</p>
+        <div class="lg:w-3/5 relative">
+          <img class="mt-8 md:mt-14 rounded-lg" src="./images/photo1.png" alt="design" />
+
+          <div
+            class="
+              absolute
+              rounded-lg
+              p-2
+              shadow-lg
+              bg-gray-900
+              -bottom-10
+              right-10
+              md:-bottom-14 md:right-40
+              h-24
+              w-40
+              xl:w-64 xl:h-40
+              2xl:h-52 2xl:w-96
+            "
+          >
+            <!-- div 1 -->
+            <div class="flex flex-col">
+              <!-- div 2 -->
+              <div class="flex">
+                <!-- div 3 -->
+                <div>
+                  <!-- div 4 -->
+                  <img class="rounded-full h-10 w-10 xl:w-16 xl:h-16 2xl:h-20 2xl:w-20" src="./images/photo2.png" alt="portrait" />
+                </div>
+
+                <div class="ml-2 mt-1 xl:ml-4">
+                  <!-- div 5 -->
+
+                  <p class="font-semibold text-xs xl:text-xl 2xl:text-3xl">Aliza Webber</p>
+                  <p class="text-gray-400 text-xs xl:text-base 2xl:text-2xl">Interior Designer</p>
+                </div>
+              </div>
+
+              <div>
+                <!-- div 6 -->
+                <p class="font-semibold text-sm mt-1 xl:text-xl xl:mt-2 2xl:text-3xl 2xl:mt-6">Designed in 2021 by Aliza Webber</p>
               </div>
             </div>
           </div>
+          <!-- div 1 ends -->
         </div>
       </div>
+    </div>
+    <div class="flex justify-center mt-10">
+      <p class="text-gray-500 font-medium text-sm">
+        created by
+        <a class="hover:text-blue-500 underline" href="https://devchallenges.io/portfolio/shobhit-sirohi">Shobhit Sirohi</a>
+        - devchallenges.io
+      </p>
     </div>
     <script src="./script.js"></script>
   </body>
