@@ -1,5 +1,3 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Interior Design Page</h1>
 
 <div align="center">
@@ -8,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://https://jolly-kepler-14bef1.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://https://devchallenges.io/solutions/5zJJSz5rCDzhlj9igjnq">
       Solution
     </a>
     <span> | </span>
